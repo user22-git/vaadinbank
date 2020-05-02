@@ -2,17 +2,26 @@ package com.bank.domain;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.ResourceLoader;
 
-import java.io.FileReader;
-import java.io.FileWriter;
+import java.io.*;
 
 public class Creator {
     static Bank bank;
 
-    public void createBank() throws Exception {
+    public void createBank() {
+        try {
+            InputStream resource = new ClassPathResource("data/NewBankOut.json").getInputStream();
+            BufferedReader reader = new BufferedReader(new InputStreamReader(resource));
+            bank = new Gson().fromJson(reader, Bank.class);
+        } catch (IOException e) {
+            bank = new Bank();
+        }
         //FileReader reader = new FileReader("src//main//resources//data//NewBankOut.json");
         //bank = new Gson().fromJson(reader, Bank.class);
-        bank = new Bank();
+        //bank = new Bank();
 
 //        Gson gson = new GsonBuilder().setPrettyPrinting().create();
 //        String json = gson.toJson(bank);

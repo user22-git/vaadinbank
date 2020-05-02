@@ -1,12 +1,8 @@
 node {
-
-    checkout scm
-
-    docker.withRegistry('https://registry.hub.docker.com', 'dockerHub') {
-        
-		def customImage = docker.build("ellodssa/vaadin-bank-0.0.1")
-		
-		/* Push the container to the custom registry */
-		customImage.push()
-    }
+	stage('SCM Checkout') {
+		git 'https://github.com/Ellodssa/vaadinbank'
+	}
+	stage('Compile-Package'){
+		sh 'mvn compile jib:build -DsendCredentialsOverHttp=true -Djib.httpTimeout=0 -Pproduction'
+	}
 }

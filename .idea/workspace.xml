@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12ac706a-8aed-4d48-9db1-b806d8492fed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bank/domain/Creator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bank/domain/Creator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/NewBankOut.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/NewBankOut.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,11 +130,15 @@
       <workItem from="1588337291175" duration="44000" />
       <workItem from="1588338478411" duration="71000" />
       <workItem from="1588408393057" duration="524000" />
+      <workItem from="1588409611074" duration="857000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1527" y="202" width="816" height="775" key="#Intentions" timestamp="1587657908576">
@@ -150,6 +153,10 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="926" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1080@0.0.2560.1080" timestamp="1587859795046" />
+    <state x="1540" y="108" key="CommitChangelistDialog2" timestamp="1588409788577">
+      <screen x="0" y="0" width="2560" height="1080" />
+    </state>
+    <state x="1540" y="108" key="CommitChangelistDialog2/0.0.2560.1080@0.0.2560.1080" timestamp="1588409788577" />
     <state x="1373" y="100" width="1094" height="887" key="DiffContextDialog" timestamp="1587816089929">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>

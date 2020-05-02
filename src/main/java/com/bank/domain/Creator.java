@@ -1,10 +1,7 @@
 package com.bank.domain;
 
 import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
-import org.springframework.core.io.ResourceLoader;
 
 import java.io.*;
 
@@ -13,7 +10,7 @@ public class Creator {
 
     public void createBank() {
         try {
-            InputStream resource = new ClassPathResource("data/NewBankOut.json").getInputStream();
+            InputStream resource = new ClassPathResource("NewBankOut.json").getInputStream();
             BufferedReader reader = new BufferedReader(new InputStreamReader(resource));
             bank = new Gson().fromJson(reader, Bank.class);
         } catch (IOException e) {

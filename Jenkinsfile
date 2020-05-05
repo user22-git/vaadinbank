@@ -1,6 +1,6 @@
 node {
 	stage('SCM Checkout') {
-		git 'https://github.com/Ellodssa/vaadinbank'
+		git 'https://github.com/user22-git/vaadinbank'
 	}
 	stage('Compile-Package'){
 		def mvnHome = tool name: 'D:\\maven', type: 'maven'

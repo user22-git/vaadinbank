@@ -274,15 +274,15 @@
                             <from>
                                 <image>openjdk:8u171-alpine</image>
                                 <auth>
-                                    <username>112349</username>
-                                    <password>111www111</password>
+                                    <username>userdocker22</username>
+                                    <password>userdocker</password>
                                 </auth>
                             </from>
                             <to>
-                                <image>112349/vaadin-bank-0.0.4</image>
+                                <image>userdocker22/vaadin-bank-0.0.4</image>
                                 <auth>
-                                    <username>112349</username>
-                                    <password>111www111</password>
+                                    <username>userdocker22</username>
+                                    <password>userdocker</password>
                                 </auth>
                             </to>
                             <container>
